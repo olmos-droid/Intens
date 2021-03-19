@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="webview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="web"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWebView"
+        app:layout_constraintStart_toStartOf="@+id/buttonWebView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWebView" />
+
+    <Button
+        android:id="@+id/buttonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="map"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWeb"
+        app:layout_constraintStart_toStartOf="@+id/buttonWeb"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWeb" />
+
+    <Button
+        android:id="@+id/buttonInstagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="instagram"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMap"
+        app:layout_constraintStart_toStartOf="@+id/buttonMap"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMap" />
+
+    <Button
+        android:id="@+id/buttonFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="facebook"
+        app:layout_constraintEnd_toEndOf="@+id/buttonInstagram"
+        app:layout_constraintStart_toStartOf="@+id/buttonInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInstagram" />
+
+    <Button
+        android:id="@+id/buttonMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Mail"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFacebook"
+        app:layout_constraintStart_toStartOf="@+id/buttonFacebook"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFacebook" />
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="call"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMail"
+        app:layout_constraintStart_toStartOf="@+id/buttonMail"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
